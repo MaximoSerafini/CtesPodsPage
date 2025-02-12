@@ -25,7 +25,7 @@ export const products = [
   },
   {
     id: 4,
-    name: "Nombre",
+    name: "WAKA 36000",
     description: "Info",
     price: 13999,
     image: "https://i.imgur.com/X6oyjrl.png",
@@ -33,7 +33,7 @@ export const products = [
   },
   {
     id: 5,
-    name: "Nombre",
+    name: "WAKA 36000",
     description: "Info",
     price: 13999,
     image: "https://i.imgur.com/X6oyjrl.png",
@@ -41,7 +41,7 @@ export const products = [
   },
   {
     id: 6,
-    name: "Nombre",
+    name: "WAKA 36000",
     description: "Info",
     price: 13999,
     image: "https://i.imgur.com/X6oyjrl.png",
