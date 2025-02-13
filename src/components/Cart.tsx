@@ -21,7 +21,7 @@ export default function Cart() {
       .join('\n');
     const totalMessage = `\n\nTotal: ${formatPrice(total)}`;
     const paymentMessage = `\nMétodo de pago: ${paymentMethod === 'efectivo' ? 'Efectivo' : 'Mercado Pago'}`;
-    const whatsappUrl = `https://wa.me/+543794222701?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(
       'Hola! Me gustaría comprar:\n' + message + totalMessage + paymentMessage
     )}`;
     window.open(whatsappUrl, '_blank');
@@ -81,10 +81,20 @@ export default function Cart() {
                       <span>{item.quantity}</span>
                       <button
                         onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
-                        className="p-1 hover:bg-gray-700 rounded"
+                        className={`p-1 rounded ${
+                          item.quantity >= item.product.stock 
+                            ? 'opacity-50 cursor-not-allowed' 
+                            : 'hover:bg-gray-700'
+                        }`}
+                        disabled={item.quantity >= item.product.stock}
                       >
                         <Plus className="h-4 w-4" />
                       </button>
+                      {item.quantity >= item.product.stock && (
+                        <span className="text-xs text-yellow-500 ml-2">
+                          Stock máximo alcanzado
+                        </span>
+                      )}
                     </div>
                   </div>
                   <button

@@ -5,7 +5,8 @@ export const products = [
     description: "36.000 Puff 5%",
     price: 21500,
     image: "https://i.imgur.com/gwLYqxL.png",
-    available: true
+    available: true,
+    stock: 10
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ export const products = [
     description: "36.000 Puff 5%",
     price: 21500,
     image: "https://i.imgur.com/svFUKz1.png",
-    available: false
+    available: true,
+    stock: 10
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ export const products = [
     description: "36.000 Puff 5%",
     price: 21500,
     image: "https://i.imgur.com/kTYFEOh.png",
-    available: true
+    available: true,
+    stock: 10
   },
   {
     id: 4,
@@ -29,7 +32,7 @@ export const products = [
     description: "36.000 Puff 5%",
     price: 21500,
     image: "https://i.imgur.com/XEfwSzR.png",
-    available: true
-  },
-
+    available: true,
+    stock: 10
+  }
 ];

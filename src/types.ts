@@ -5,4 +5,5 @@ export interface Product {
   price: number;
   image: string;
   available: boolean;
+  stock: number; // Nuevo campo para el límite de stock
 }

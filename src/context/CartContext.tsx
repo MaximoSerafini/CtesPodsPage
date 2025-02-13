@@ -26,9 +26,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     setItems(currentItems => {
       const existingItem = currentItems.find(item => item.product.id === product.id);
       if (existingItem) {
+        // Verificar si alcanzo el limite de stock
+        if (existingItem.quantity >= product.stock) {
+          return currentItems;
+        }
         return currentItems.map(item =>
           item.product.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: Math.min(item.quantity + 1, product.stock) }
             : item
         );
       }
@@ -45,13 +49,19 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       removeFromCart(productId);
       return;
     }
-    setItems(currentItems =>
-      currentItems.map(item =>
+    
+    setItems(currentItems => {
+      const item = currentItems.find(item => item.product.id === productId);
+      if (!item || quantity > item.product.stock) {
+        return currentItems;
+      }
+      
+      return currentItems.map(item =>
         item.product.id === productId
           ? { ...item, quantity }
           : item
-      )
-    );
+      );
+    });
   };
 
   const total = items.reduce(
