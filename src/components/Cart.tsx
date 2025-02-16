@@ -21,7 +21,7 @@ export default function Cart() {
       .join('\n');
     const totalMessage = `\n\nTotal: ${formatPrice(total)}`;
     const paymentMessage = `\nMétodo de pago: ${paymentMethod === 'efectivo' ? 'Efectivo' : 'Mercado Pago'}`;
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/+543794222701?text=${encodeURIComponent(
       'Hola! Me gustaría comprar:\n' + message + totalMessage + paymentMessage
     )}`;
     window.open(whatsappUrl, '_blank');

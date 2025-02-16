@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, ShoppingCart, Instagram, Facebook } from 'lucide-react';
+import { Menu, X, ShoppingCart, Instagram, } from 'lucide-react';
 import ProductCard from './components/ProductCard';
 import Cart from './components/Cart';
 import { products } from './data/products';
