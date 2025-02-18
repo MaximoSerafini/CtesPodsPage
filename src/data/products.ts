@@ -1,10 +1,10 @@
 export const products = [
   {
     id: 1,
-    name: "WAKA 36000 Peach Mango Watermelon",
+    name: "WAKA 36000 Strawberry Watermelon",
     description: "36.000 Puff 5%",
     price: 21500,
-    image: "https://i.imgur.com/0PQKR7s.png",
+    image: "https://i.imgur.com/osWP0Cg.png",
     available: true,
     stock: 5
   },
