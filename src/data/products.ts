@@ -4,7 +4,7 @@ export const products = [
     name: "WAKA 36000 Strawberry Watermelon",
     description: "36.000 Puff 5%",
     price: 21500,
-    image: "https://i.imgur.com/osWP0Cg.png",
+    image: "https://i.imgur.com/tdWc4FW.png",
     available: true,
     stock: 5
   },
