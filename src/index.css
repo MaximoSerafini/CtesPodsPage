@@ -15,37 +15,43 @@
 }
 
 .animated-gradient {
-  background: linear-gradient(-45deg, #1a1a1a, #2d1b4e, #1f1f1f, #4a1942);
+  background: linear-gradient(-45deg, #FCF7F8, #A31621, #FCF7F8, #A31621);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
 
 @keyframes float {
   0% {
-    transform: translateX(0px);
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, -10px) rotate(2deg);
   }
   50% {
-    transform: translateX(15px);
+    transform: translate(0, -15px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-10px, -10px) rotate(-2deg);
   }
   100% {
-    transform: translateX(0px);
+    transform: translate(0, 0) rotate(0deg);
   }
 }
 
 @keyframes pulse-glow {
   0% {
-    filter: drop-shadow(0 0 1rem rgba(168, 85, 247, 0.3));
+    filter: drop-shadow(0 0 1rem rgba(163, 22, 33, 0.3));
   }
   50% {
-    filter: drop-shadow(0 0 2.5rem rgba(168, 85, 247, 0.5));
+    filter: drop-shadow(0 0 2.5rem rgba(163, 22, 33, 0.5));
   }
   100% {
-    filter: drop-shadow(0 0 1rem rgba(168, 85, 247, 0.3));
+    filter: drop-shadow(0 0 1rem rgba(163, 22, 33, 0.3));
   }
 }
 
 .animate-pulse-glow {
-  animation: float 3s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
 }
 
 .glow-effect {
@@ -60,19 +66,19 @@
   transform: translate(-50%, -50%);
   width: 120%;
   height: 120%;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.3) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(163, 22, 33, 0.3) 0%, transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
 
 .product-image {
-  filter: drop-shadow(0 0 1rem rgba(168, 85, 247, 0.2));
+  filter: drop-shadow(0 0 1rem rgba(163, 22, 33, 0.2));
   transition: all 0.3s ease;
 }
 
 .product-image:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 2rem rgba(168, 85, 247, 0.4));
+  filter: drop-shadow(0 0 2rem rgba(163, 22, 33, 0.4));
 }
 
 @keyframes slideIn {
