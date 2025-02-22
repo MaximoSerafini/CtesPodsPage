@@ -21,7 +21,7 @@ export default function Cart() {
       .join('\n');
     const totalMessage = `\n\nTotal: ${formatPrice(total)}`;
     const paymentMessage = `\nMétodo de pago: ${paymentMethod === 'efectivo' ? 'Efectivo' : 'Mercado Pago'}`;
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/+543794222701?text=${encodeURIComponent(
       'Hola! Me gustaría comprar:\n' + message + totalMessage + paymentMessage
     )}`;
     window.open(whatsappUrl, '_blank');
@@ -31,11 +31,11 @@ export default function Cart() {
     return (
       <button
         onClick={() => setIsCartOpen(true)}
-        className="fixed bottom-6 right-6 bg-[#A31621] p-4 rounded-full shadow-lg hover:bg-[#A31621]/90 transition-colors z-50"
+        className="fixed bottom-6 right-6 bg-purple-500 p-4 rounded-full shadow-lg hover:bg-purple-600 transition-colors z-50"
       >
-        <ShoppingCart className="h-6 w-6 text-white" />
+        <ShoppingCart className="h-6 w-6" />
         {items.length > 0 && (
-          <span className="absolute -top-2 -right-2 bg-black text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center border-2 border-[#A31621]">
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center">
             {items.length}
           </span>
         )}
@@ -44,13 +44,13 @@ export default function Cart() {
   }
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-end z-50">
-      <div className="bg-black w-full max-w-md p-6 overflow-y-auto border-l border-[#A31621]/20">
+    <div className="fixed inset-0 bg-black/50 flex justify-end z-50">
+      <div className="bg-gray-900 w-full max-w-md p-6 overflow-y-auto">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-white">Carrito</h2>
+          <h2 className="text-2xl font-bold">Carrito</h2>
           <button
             onClick={() => setIsCartOpen(false)}
-            className="p-2 hover:bg-[#A31621]/10 rounded-full text-gray-400 hover:text-white transition-colors"
+            className="p-2 hover:bg-gray-800 rounded-full"
           >
             <X className="h-6 w-6" />
           </button>
@@ -62,29 +62,29 @@ export default function Cart() {
           <>
             <div className="space-y-4">
               {items.map(item => (
-                <div key={item.product.id} className="flex items-center gap-4 bg-gray-900 p-4 rounded-lg border border-[#A31621]/20">
+                <div key={item.product.id} className="flex items-center gap-4 bg-gray-800 p-4 rounded-lg">
                   <img
                     src={item.product.image}
                     alt={item.product.name}
                     className="w-20 h-20 object-contain"
                   />
                   <div className="flex-1">
-                    <h3 className="font-semibold text-white">{item.product.name}</h3>
-                    <p className="text-[#A31621]">{formatPrice(item.product.price)}</p>
+                    <h3 className="font-semibold">{item.product.name}</h3>
+                    <p className="text-purple-500">{formatPrice(item.product.price)}</p>
                     <div className="flex items-center gap-2 mt-2">
                       <button
                         onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
-                        className="p-1 hover:bg-[#A31621]/10 rounded text-gray-400 hover:text-white transition-colors"
+                        className="p-1 hover:bg-gray-700 rounded"
                       >
                         <Minus className="h-4 w-4" />
                       </button>
-                      <span className="text-white">{item.quantity}</span>
+                      <span>{item.quantity}</span>
                       <button
                         onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
-                        className={`p-1 rounded text-gray-400 hover:text-white transition-colors ${
+                        className={`p-1 rounded ${
                           item.quantity >= item.product.stock 
                             ? 'opacity-50 cursor-not-allowed' 
-                            : 'hover:bg-[#A31621]/10'
+                            : 'hover:bg-gray-700'
                         }`}
                         disabled={item.quantity >= item.product.stock}
                       >
@@ -99,7 +99,7 @@ export default function Cart() {
                   </div>
                   <button
                     onClick={() => removeFromCart(item.product.id)}
-                    className="text-[#A31621] hover:text-[#A31621]/80 transition-colors"
+                    className="text-red-500 hover:text-red-400"
                   >
                     <X className="h-5 w-5" />
                   </button>
@@ -107,9 +107,9 @@ export default function Cart() {
               ))}
             </div>
 
-            <div className="mt-6 border-t border-[#A31621]/20 pt-6">
+            <div className="mt-6 border-t border-gray-800 pt-6">
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-white mb-2">Método de pago</h3>
+                <h3 className="text-lg font-semibold mb-2">Método de pago</h3>
                 <div className="space-y-2">
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
@@ -118,9 +118,9 @@ export default function Cart() {
                       value="efectivo"
                       checked={paymentMethod === 'efectivo'}
                       onChange={(e) => setPaymentMethod(e.target.value)}
-                      className="text-[#A31621] focus:ring-[#A31621] focus:ring-offset-black"
+                      className="text-purple-500 focus:ring-purple-500"
                     />
-                    <span className="text-gray-300">Efectivo</span>
+                    <span>Efectivo</span>
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
@@ -129,21 +129,21 @@ export default function Cart() {
                       value="mercadopago"
                       checked={paymentMethod === 'mercadopago'}
                       onChange={(e) => setPaymentMethod(e.target.value)}
-                      className="text-[#A31621] focus:ring-[#A31621] focus:ring-offset-black"
+                      className="text-purple-500 focus:ring-purple-500"
                     />
-                    <span className="text-gray-300">Mercado Pago</span>
+                    <span>Mercado Pago</span>
                   </label>
                 </div>
               </div>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-xl font-bold text-white">Total:</span>
-                <span className="text-2xl font-bold text-[#A31621]">
+                <span className="text-xl font-bold">Total:</span>
+                <span className="text-2xl font-bold text-purple-500">
                   {formatPrice(total)}
                 </span>
               </div>
               <button
                 onClick={handleWhatsAppCheckout}
-                className="w-full bg-[#A31621] hover:bg-[#A31621]/90 py-3 rounded-full font-semibold transition-colors text-white"
+                className="w-full bg-green-500 hover:bg-green-600 py-3 rounded-full font-semibold transition-colors"
               >
                 Comprar por WhatsApp
               </button>
