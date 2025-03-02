@@ -78,6 +78,6 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/486erne.png",
     available: true,
-    stock: 5
+    stock: 4
   },
 ];
