@@ -42,9 +42,6 @@ export default function ProductCard({ product }: ProductCardProps) {
               }`}>
                 {product.available ? 'Disponible' : 'Sin stock'}
               </span>
-              <span className="text-sm text-gray-400 mt-1">
-                Stock: {product.stock}
-              </span>
             </div>
           </div>
           <p className="text-gray-400 mb-4 text-center">{product.description}</p>
