@@ -5,8 +5,8 @@ export const products = [
     description: "Sabor a frambuesa azul y efecto Ice Blast. Ofrece hasta 36,000 puffs con 5% de nicotina",
     price: 21500,
     image: "https://i.imgur.com/OZywagQ.png",
-    available: true,
-    stock: 4
+    available: false,
+    stock: 0
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const products = [
     price: 18500,
     image: "https://i.imgur.com/7htzbQC.png",
     available: true,
-    stock: 4
+    stock: 2
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const products = [
     price: 18500,
     image: "https://i.imgur.com/7htzbQC.png",
     available: true,
-    stock: 5
+    stock: 2
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const products = [
     price: 18500,
     image: "https://i.imgur.com/7htzbQC.png",
     available: true,
-    stock: 4
+    stock: 1
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/J8IXwjG.png",
     available: true,
-    stock: 7
+    stock: 5
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/eEZMkCc.png",
     available: true,
-    stock: 4
+    stock: 3
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/C1aLzy0.png",
     available: true,
-    stock: 6
+    stock: 2
   },
   {
     id: 8,
@@ -78,6 +78,6 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/486erne.png",
     available: true,
-    stock: 4
+    stock: 3
   },
 ];
