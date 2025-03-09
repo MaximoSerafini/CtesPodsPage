@@ -6,6 +6,7 @@ export default function Cart() {
   const { items, total, isCartOpen, setIsCartOpen, updateQuantity, removeFromCart } = useCart();
   const [paymentMethod, setPaymentMethod] = useState('efectivo');
   const [deliveryMethod, setDeliveryMethod] = useState('pickup');
+  const [deliveryAddress, setDeliveryAddress] = useState('');
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('es-AR', {
@@ -23,8 +24,9 @@ export default function Cart() {
     const totalMessage = `\n\nTotal: ${formatPrice(total)}`;
     const paymentMessage = `\nMétodo de pago: ${paymentMethod === 'efectivo' ? 'Efectivo' : 'Mercado Pago'}`;
     const deliveryMessage = `\nMétodo de entrega: ${deliveryMethod === 'pickup' ? 'Retiro en el local' : 'Envío a domicilio (costo adicional a coordinar)'}`;
+    const addressMessage = deliveryMethod === 'delivery' ? `\nDirección de envío: ${deliveryAddress}` : '';
     const whatsappUrl = `https://wa.me/+543794222701?text=${encodeURIComponent(
-      'Hola! Me gustaría comprar:\n' + message + totalMessage + paymentMessage + deliveryMessage
+      'Hola! Me gustaría comprar:\n' + message + totalMessage + paymentMessage + deliveryMessage + addressMessage
     )}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -139,6 +141,21 @@ export default function Cart() {
                     </div>
                   </label>
                 </div>
+
+                {deliveryMethod === 'delivery' && (
+                  <div className="mt-4">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
+                      Dirección de envío
+                    </label>
+                    <textarea
+                      value={deliveryAddress}
+                      onChange={(e) => setDeliveryAddress(e.target.value)}
+                      placeholder="Ingresa tu dirección completa..."
+                      className="w-full px-3 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"
+                      rows={3}
+                    />
+                  </div>
+                )}
               </div>
 
               <div className="mb-4">
