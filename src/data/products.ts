@@ -32,8 +32,8 @@ export const products = [
     description: "Sabor a fresa y uva con efecto Ice y ofrece hasta 25,000 puffs con 5% de nicotina.",
     price: 18500,
     image: "https://i.imgur.com/7htzbQC.png",
-    available: true,
-    stock: 1
+    available: false,
+    stock: 0
   },
   {
     id: 5,
