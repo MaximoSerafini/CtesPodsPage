@@ -51,7 +51,7 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/x78X7xb.png",
     available: true,
-    stock: 4
+    stock: 3
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/eEZMkCc.png",
     available: true,
-    stock: 3
+    stock: 2
   },
   {
     id: 8,
@@ -68,8 +68,8 @@ export const products = [
     description: "Sabor a sandía con efecto Ice y ofrece hasta 10,000 puffs con 5% de nicotina",
     price: 12500,
     image: "https://i.imgur.com/C1aLzy0.png",
-    available: true,
-    stock: 2
+    available: false,
+    stock: 0
   },
   {
     id: 8,
@@ -78,6 +78,6 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/486erne.png",
     available: true,
-    stock: 3
+    stock: 1
   },
 ];
