@@ -24,7 +24,7 @@ export const products = [
     price: 18500,
     image: "https://i.imgur.com/7htzbQC.png",
     available: true,
-    stock: 2
+    stock: 1
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/J8IXwjG.png",
     available: true,
-    stock: 5
+    stock: 4
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const products = [
     price: 12500,
     image: "https://i.imgur.com/x78X7xb.png",
     available: true,
-    stock: 3
+    stock: 1
   },
   {
     id: 7,
