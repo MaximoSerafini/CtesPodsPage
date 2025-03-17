@@ -67,7 +67,7 @@ export const products = [
     id: 3,
     name: "ELFBAR TOUCH 10000",
     description: "10.000 Puff 5% Nicotina",
-    price: 13500,
+    price: 13000,
     available: true,
     stock: 6,
     flavors: [
