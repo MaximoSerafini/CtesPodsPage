@@ -1,9 +1,21 @@
+export interface Flavor {
+  name: string;
+  image: string;
+}
+
 export interface Product {
   id: number;
   name: string;
   description: string;
   price: number;
-  image: string;
   available: boolean;
-  stock: number; // Nuevo campo para el límite de stock
+  stock: number;
+  flavors: Flavor[];
+  selectedFlavorIndex?: number;
+}
+
+export interface CartItem {
+  product: Product;
+  quantity: number;
+  selectedFlavorIndex: number;
 }

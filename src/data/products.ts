@@ -1,83 +1,84 @@
 export const products = [
   {
     id: 1,
-    name: "WAKA 36000 Blue Razz",
-    description: "Sabor a frambuesa azul y efecto Ice Blast. Ofrece hasta 36,000 puffs con 5% de nicotina",
+    name: "WAKA BLAST 36000",
+    description: "36.000 Puff 5% Nicotina",
     price: 21500,
-    image: "https://i.imgur.com/OZywagQ.png",
-    available: false,
-    stock: 0
+    available: true,
+    stock: 5,
+    flavors: [
+      {
+        name: "Strawberry Watermelon",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Strawberry Banana",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Cherry Lemon",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Grape",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Icy Mint",
+        image: "https://i.imgur.com/co999yQ.png"
+      }
+    ]
   },
   {
     id: 2,
-    name: "WAKA 25000 Grape Ice",
-    description: "Sabor a uva con efecto Ice y ofrece hasta 25,000 puffs con 5% de nicotina.",
-    price: 18500,
-    image: "https://i.imgur.com/7htzbQC.png",
-    available: false,
-    stock: 0
+    name: "ELFBAR 10000",
+    description: "10.000 Puff 5% Nicotina",
+    price: 12500,
+    available: true,
+    stock: 8,
+    flavors: [
+      {
+        name: "Miami Mint",
+        image: "https://i.imgur.com/2LFrWiC.png"
+      },
+      {
+        name: "Watermelon Ice",
+        image: "https://i.imgur.com/bRM6gCV.png"
+      },
+      {
+        name: "Mango Madness",
+        image: "https://i.imgur.com/CyKDvhI.png"
+      },
+      {
+        name: "Cherry Lemon",
+        image: "https://i.imgur.com/QcrRial.png"
+      },
+      {
+        name: "Grape Cherry",
+        image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+      {
+        name: "Strawberry Ice",
+        image: "https://i.imgur.com/AB5BMTl.png"
+      },
+    ]
   },
   {
     id: 3,
-    name: "WAKA 25000 Watermelon Ice",
-    description: "Sabor a sandía con efecto Ice y ofrece hasta 25,000 puffs con 5% de nicotina.",
-    price: 18500,
-    image: "https://i.imgur.com/7htzbQC.png",
-    available: false,
-    stock: 0
-  },
-  {
-    id: 4,
-    name: "WAKA 25000 Strawberry Grape",
-    description: "Sabor a fresa y uva con efecto Ice y ofrece hasta 25,000 puffs con 5% de nicotina.",
-    price: 18500,
-    image: "https://i.imgur.com/7htzbQC.png",
-    available: false,
-    stock: 0
-  },
-  {
-    id: 5,
-    name: "ElfBar 10000 Miami Mint",
-    description: "Sabor a menta refrescante y ofrece hasta 10,000 puffs con 5% de nicotina",
-    price: 12500,
-    image: "https://i.imgur.com/J8IXwjG.png",
+    name: "ELFBAR TOUCH 10000",
+    description: "10.000 Puff 5% Nicotina",
+    price: 13500,
     available: true,
-    stock: 4
-  },
-  {
-    id: 6,
-    name: "ElfBar 10000 Blue Razz Ice",
-    description: "Sabor a frambuesa azul con efecto Ice y ofrece hasta 10,000 puffs con 5% de nicotina",
-    price: 12500,
-    image: "https://i.imgur.com/x78X7xb.png",
-    available: true,
-    stock: 1
-  },
-  {
-    id: 7,
-    name: "ElfBar 10000 Mango Madness",
-    description: "Sabor a mango intenso y ofrece hasta 10,000 puffs con 5% de nicotina",
-    price: 12500,
-    image: "https://i.imgur.com/eEZMkCc.png",
-    available: true,
-    stock: 2
-  },
-  {
-    id: 8,
-    name: "ElfBar 10000 Watermelon Ice",
-    description: "Sabor a sandía con efecto Ice y ofrece hasta 10,000 puffs con 5% de nicotina",
-    price: 12500,
-    image: "https://i.imgur.com/C1aLzy0.png",
-    available: false,
-    stock: 0
-  },
-  {
-    id: 8,
-    name: "ElfBar 10000 Cherry Lemon",
-    description: "Sabor a cereza y limón con efecto Ice y ofrece hasta 10,000 puffs con 5% de nicotina",
-    price: 12500,
-    image: "https://i.imgur.com/486erne.png",
-    available: true,
-    stock: 1
-  },
+    stock: 6,
+    flavors: [
+      {
+        name: "Blueberry Watermelon",
+        image: "https://i.imgur.com/GF8tnwK.png"
+      },
+      {
+        name: "Cherry Lemon",
+        image: "https://i.imgur.com/7U7BMdr.png"
+      }
+    ]
+  }
 ];

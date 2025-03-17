@@ -19,7 +19,7 @@ export default function Cart() {
 
   const handleWhatsAppCheckout = () => {
     const message = items
-      .map(item => `${item.quantity}x ${item.product.name} (${formatPrice(item.product.price)})`)
+      .map(item => `${item.quantity}x ${item.product.name} - ${item.product.flavors[item.selectedFlavorIndex].name} (${formatPrice(item.product.price)})`)
       .join('\n');
     const totalMessage = `\n\nTotal: ${formatPrice(total)}`;
     const paymentMessage = `\nMétodo de pago: ${paymentMethod === 'efectivo' ? 'Efectivo' : 'Mercado Pago'}`;
@@ -66,25 +66,26 @@ export default function Cart() {
           <>
             <div className="space-y-4">
               {items.map(item => (
-                <div key={item.product.id} className="flex items-center gap-4 bg-gray-800 p-4 rounded-lg">
+                <div key={`${item.product.id}-${item.selectedFlavorIndex}`} className="flex items-center gap-4 bg-gray-800 p-4 rounded-lg">
                   <img
-                    src={item.product.image}
-                    alt={item.product.name}
+                    src={item.product.flavors[item.selectedFlavorIndex].image}
+                    alt={`${item.product.name} - ${item.product.flavors[item.selectedFlavorIndex].name}`}
                     className="w-20 h-20 object-contain"
                   />
                   <div className="flex-1">
                     <h3 className="font-semibold">{item.product.name}</h3>
+                    <p className="text-sm text-gray-400">{item.product.flavors[item.selectedFlavorIndex].name}</p>
                     <p className="text-purple-500">{formatPrice(item.product.price)}</p>
                     <div className="flex items-center gap-2 mt-2">
                       <button
-                        onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
+                        onClick={() => updateQuantity(item.product.id, item.selectedFlavorIndex, item.quantity - 1)}
                         className="p-1 hover:bg-gray-700 rounded transition-colors"
                       >
                         <Minus className="h-4 w-4" />
                       </button>
                       <span>{item.quantity}</span>
                       <button
-                        onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
+                        onClick={() => updateQuantity(item.product.id, item.selectedFlavorIndex, item.quantity + 1)}
                         className={`p-1 rounded transition-colors ${
                           item.quantity >= item.product.stock 
                             ? 'opacity-50 cursor-not-allowed' 
@@ -102,7 +103,7 @@ export default function Cart() {
                     </div>
                   </div>
                   <button
-                    onClick={() => removeFromCart(item.product.id)}
+                    onClick={() => removeFromCart(item.product.id, item.selectedFlavorIndex)}
                     className="text-red-500 hover:text-red-400 transition-colors"
                   >
                     <X className="h-5 w-5" />
