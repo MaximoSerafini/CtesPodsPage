@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     name: "WAKA BLAST 36000",
     description: "36.000 Puff 5% Nicotina",
-    price: 21500,
+    price: 21000,
     available: true,
     stock: 5,
     flavors: [
@@ -67,7 +67,7 @@ export const products = [
     id: 3,
     name: "ELFBAR TOUCH 10000",
     description: "10.000 Puff 5% Nicotina",
-    price: 13000,
+    price: 12500,
     available: true,
     stock: 6,
     flavors: [
