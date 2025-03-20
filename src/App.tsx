@@ -54,7 +54,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative h-screen bg-gradient-to-br from-purple-600 via-purple-500 to-pink-500">
+      <section id="home" className="relative h-screen animated-gradient">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center" />
         <div className="relative h-full flex items-center justify-center text-center">
           <div className="max-w-4xl px-4 animate-[fadeIn_1s_ease-out]">
