@@ -68,10 +68,6 @@ export const products = [
     stock: 6,
     flavors: [
       {
-        name: "Blueberry Watermelon",
-        image: "https://i.imgur.com/GF8tnwK.png"
-      },
-      {
         name: "Cherry Lemon",
         image: "https://i.imgur.com/7U7BMdr.png"
       }
