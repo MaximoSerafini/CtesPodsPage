@@ -1,11 +1,61 @@
-import React, { useState } from 'react';
-import { Menu, X, ShoppingCart, Instagram } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Menu, X, ShoppingCart, Instagram, AlertTriangle } from 'lucide-react';
 import ProductCard from './components/ProductCard';
 import Cart from './components/Cart';
 import { products } from './data/products';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAgeVerified, setIsAgeVerified] = useState(false);
+  const [showAgeModal, setShowAgeModal] = useState(true);
+
+  useEffect(() => {
+    const verified = localStorage.getItem('ageVerified');
+    if (verified === 'true') {
+      setIsAgeVerified(true);
+      setShowAgeModal(false);
+    }
+  }, []);
+
+  const handleAgeVerification = (isAdult: boolean) => {
+    if (isAdult) {
+      setIsAgeVerified(true);
+      setShowAgeModal(false);
+      localStorage.setItem('ageVerified', 'true');
+    } else {
+      window.location.href = 'https://www.google.com';
+    }
+  };
+
+  if (showAgeModal) {
+    return (
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div className="bg-white rounded-lg max-w-md w-full p-6 shadow-xl animate-[fadeIn_0.3s_ease-out]">
+          <div className="flex items-center justify-center mb-4 text-yellow-500">
+            <AlertTriangle className="h-12 w-12" />
+          </div>
+          <h2 className="text-2xl font-bold text-center mb-4">Verificación de Edad</h2>
+          <p className="text-gray-600 text-center mb-6">
+            Para acceder a este sitio, debes ser mayor de 18 años. ¿Confirmas que eres mayor de edad?
+          </p>
+          <div className="flex flex-col gap-3">
+            <button
+              onClick={() => handleAgeVerification(true)}
+              className="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
+            >
+              Sí, soy mayor de 18 años
+            </button>
+            <button
+              onClick={() => handleAgeVerification(false)}
+              className="w-full bg-gray-200 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors"
+            >
+              No, soy menor de edad
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
