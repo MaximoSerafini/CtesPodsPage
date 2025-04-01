@@ -42,10 +42,6 @@ export const products = [
         image: "https://i.imgur.com/bRM6gCV.png"
       },
       {
-        name: "Mango Madness",
-        image: "https://i.imgur.com/CyKDvhI.png"
-      },
-      {
         name: "Cherry Lemon",
         image: "https://i.imgur.com/QcrRial.png"
       },
