@@ -45,10 +45,6 @@ export const products = [
         name: "Grape Cherry",
         image: "https://i.imgur.com/sXJ1BgB.png"
       },
-      {
-        name: "Strawberry Ice",
-        image: "https://i.imgur.com/AB5BMTl.png"
-      },
     ]
   },
   {
