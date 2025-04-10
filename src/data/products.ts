@@ -37,10 +37,6 @@ export const products = [
         name: "Cherry Lemon",
         image: "https://i.imgur.com/QcrRial.png"
       },
-      {
-        name: "Grape Cherry",
-        image: "https://i.imgur.com/sXJ1BgB.png"
-      },
     ]
   },
   {
@@ -51,10 +47,6 @@ export const products = [
     available: true,
     stock: 6,
     flavors: [
-      {
-        name: "Cherry Lemon",
-        image: "https://i.imgur.com/7U7BMdr.png"
-      }
     ]
   }
 ];
