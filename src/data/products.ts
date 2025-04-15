@@ -39,23 +39,23 @@ export const products = [
       },
       {
         name: "Prism Mint",
-        image: "https://i.imgur.com/YuYLltE.png"
+        image: "https://i.imgur.com/VOWtbyH.png"
       },
       {
         name: "Sour Apple ice",
-        image: "https://i.imgur.com/YuYLltE.png"
+        image: "https://i.imgur.com/hJs2NfA.png"
       },
       {
         name: "Apple Mango Lemon",
-        image: "https://i.imgur.com/YuYLltE.png"
+        image: "https://i.imgur.com/wzTn3u3.png"
       },
       {
         name: "Blue Razz tang",
-        image: "https://i.imgur.com/YuYLltE.png"
+        image: "https://i.imgur.com/u422U6E.png"
       },
       {
         name: "Gummy Peach",
-        image: "https://i.imgur.com/YuYLltE.png"
+        image: "https://i.imgur.com/OZgU1dQ.png"
       },
       {
         name: "Sour Watermelon Patch",
