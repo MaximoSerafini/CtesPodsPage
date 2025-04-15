@@ -27,30 +27,40 @@ export const products = [
   },
   {
     id: 2,
-    name: "ELFBAR 10000",
-    description: "10.000 Pitadas 5% Nicotina",
-    price: 11000,
+    name: "SPACEMAN NEBULA 25K",
+    description: "25.000 Pitadas 5% Nicotina",
+    price: 16000,
     available: true,
     stock: 0,
     flavors: [
       {
-        name: "Miami Mint",
-        image: "https://i.imgur.com/2LFrWiC.png"
+        name: "Blueberry Watermelon",
+        image: "https://i.imgur.com/YuYLltE.png"
+      },
+      {
+        name: "Prism Mint",
+        image: "https://i.imgur.com/YuYLltE.png"
+      },
+      {
+        name: "Sour Apple ice",
+        image: "https://i.imgur.com/YuYLltE.png"
+      },
+      {
+        name: "Apple Mango Lemon",
+        image: "https://i.imgur.com/YuYLltE.png"
+      },
+      {
+        name: "Blue Razz tang",
+        image: "https://i.imgur.com/YuYLltE.png"
+      },
+      {
+        name: "Gummy Peach",
+        image: "https://i.imgur.com/YuYLltE.png"
+      },
+      {
+        name: "Sour Watermelon Patch",
+        image: "https://i.imgur.com/YuYLltE.png"
       },
     ]
   },
-  {
-    id: 3,
-    name: "ELFBAR TOUCH 10000",
-    description: "10.000 Pitadas 5% Nicotina",
-    price: 11000,
-    available: true,
-    stock: 0,
-    flavors: [
-      {
-        name: "Cherry Lemon",
-        image: "https://i.imgur.com/7U7BMdr.png"
-      }
-    ]
-  }
 ];
