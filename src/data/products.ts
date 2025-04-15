@@ -12,6 +12,10 @@ export const products = [
         image: "https://i.imgur.com/co999yQ.png"
       },
       {
+        name: "Strawberry Watermelon",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
         name: "Strawberry Banana",
         image: "https://i.imgur.com/co999yQ.png"
       },
