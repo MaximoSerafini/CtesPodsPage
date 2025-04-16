@@ -76,6 +76,14 @@ function App() {
                 <a href="#home" className="text-gray-600 hover:text-purple-600 px-3 py-2 transition-colors">Inicio</a>
                 <a href="#products" className="text-gray-600 hover:text-purple-600 px-3 py-2 transition-colors">Productos</a>
                 <a href="#contact" className="text-gray-600 hover:text-purple-600 px-3 py-2 transition-colors">Contacto</a>
+                <a 
+                  href="https://essenzactes.netlify.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition-colors"
+                >
+                  Perfumes
+                </a>
               </div>
             </div>
 
@@ -98,6 +106,14 @@ function App() {
               <a href="#home" className="block px-3 py-2 text-gray-600 hover:text-purple-600 transition-colors">Inicio</a>
               <a href="#products" className="block px-3 py-2 text-gray-600 hover:text-purple-600 transition-colors">Productos</a>
               <a href="#contact" className="block px-3 py-2 text-gray-600 hover:text-purple-600 transition-colors">Contacto</a>
+              <a 
+                href="https://essenzactes.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block px-3 py-2 text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors mt-2"
+              >
+                Perfumes
+              </a>
             </div>
           </div>
         )}
@@ -152,7 +168,7 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
             Nuestras Colecciones
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 auto-rows-fr">
             {products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
