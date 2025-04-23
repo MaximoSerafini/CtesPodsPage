@@ -8,25 +8,13 @@ export const products = [
     stock: 12,
     flavors: [
       {
-        name: "Passsion Fruit Guava",
-        image: "https://i.imgur.com/co999yQ.png"
-      },
-      {
         name: "Strawberry Watermelon",
-        image: "https://i.imgur.com/co999yQ.png"
-      },
-      {
-        name: "Strawberry Banana",
         image: "https://i.imgur.com/co999yQ.png"
       },
       {
         name: "Watermelon Chill",
         image: "https://i.imgur.com/co999yQ.png"
       },
-      {
-        name: "Icy Mint",
-        image: "https://i.imgur.com/co999yQ.png"
-      }
     ]
   },
   {
