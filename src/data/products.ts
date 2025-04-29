@@ -5,7 +5,7 @@ export const products = [
     description: "36.000 Pitadas 5% Nicotina",
     price: 20000,
     available: true,
-    stock: 12,
+    stock: 0,
     flavors: [
       {
         name: "Strawberry Watermelon",
