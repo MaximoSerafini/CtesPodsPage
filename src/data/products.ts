@@ -5,7 +5,7 @@ export const products = [
     description: "36.000 Pitadas 5% Nicotina",
     price: 20000,
     available: true,
-    stock: 0,
+    stock: 10,
     flavors: [
       {
         name: "Strawberry Watermelon",
@@ -13,6 +13,14 @@ export const products = [
       },
       {
         name: "Watermelon Chill",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Blue Razz",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Strawberry Banana",
         image: "https://i.imgur.com/co999yQ.png"
       },
     ]
