@@ -29,7 +29,7 @@ export const products = [
     id: 2,
     name: "SPACEMAN NEBULA 25K",
     description: "25.000 Pitadas 5% Nicotina",
-    price: 15000,
+    price: 14000,
     available: true,
     stock: 10,
     flavors: [
@@ -60,6 +60,28 @@ export const products = [
       {
         name: "Sour Watermelon Patch",
         image: "https://i.imgur.com/YuYLltE.png"
+      },
+    ]
+  },
+  {
+    id: 3,
+    name: "Elfbar RB 10k",
+    description: "10.000 Pitadas 5% Nicotina",
+    price: 11000,
+    available: true,
+    stock: 10,
+    flavors: [
+      {
+        name: "Mango Madness",
+        image: "https://i.imgur.com/CyKDvhI.png"
+      },
+      {
+        name: "Strawberry Kiwi",
+        image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+      {
+        name: "Watermelon Ice",
+        image: "https://i.imgur.com/sXJ1BgB.png"
       },
     ]
   },
