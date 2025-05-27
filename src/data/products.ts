@@ -1,16 +1,20 @@
 export const products = [
   {
     id: 1,
-    name: "WAKA BLAST 36000",
-    description: "36.000 Pitadas 5% Nicotina",
+    name: "NIC KING 40K",
+    description: "40.000 Pitadas Con NICOTINA regulable",
     price: 20000,
     available: true,
-    stock: 0,
+    stock: 1,
     flavors: [
    
       {
-        name: "Strawberry Banana",
-        image: "https://i.imgur.com/co999yQ.png"
+        name: "Icy blue rose",
+        image: "https://i.imgur.com/xUJmQM2.png"
+      },
+      {
+        name: "Icy blue rose",
+        image: "https://i.imgur.com/xUJmQM2.png"
       },
     ]
   },
