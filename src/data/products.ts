@@ -27,6 +27,28 @@ export const products = [
     ]
   },
   {
+    id: 1,
+    name: "WAKA BLAST 36000",
+    description: "36.000 Pitadas 5% Nicotina",
+    price: 20000,
+    available: true,
+    stock: 10,
+    flavors: [
+      {
+        name: "Strawberry Watermelon",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Blue Razz",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+      {
+        name: "Passion Fruit Guava",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+    ]
+  },
+  {
     id: 2,
     name: "SPACEMAN NEBULA 25K",
     description: "25.000 Pitadas 5% Nicotina",
@@ -41,14 +63,6 @@ export const products = [
       {
         name: "Sour Apple ice",
         image: "https://i.imgur.com/hJs2NfA.png"
-      },
-      {
-        name: "Apple Mango Lemon",
-        image: "https://i.imgur.com/wzTn3u3.png"
-      },
-      {
-        name: "Blue Razz tang",
-        image: "https://i.imgur.com/u422U6E.png"
       },
       {
         name: "Gummy Peach",
@@ -69,12 +83,22 @@ export const products = [
     stock: 10,
     flavors: [
       {
-        name: "Strawberry Kiwi",
-        image: "https://i.imgur.com/sXJ1BgB.png"
-      },
-      {
         name: "Watermelon Ice",
         image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+    ]
+  },
+  {
+    id: 4,
+    name: "Ignite v250 Gold",
+    description: "10.000 Pitadas 5% Nicotina",
+    price: 21000,
+    available: true,
+    stock: 5,
+    flavors: [
+      {
+        name: "Green Apple",
+        image: "https://i.imgur.com/ujxISoy.png"
       },
     ]
   },
