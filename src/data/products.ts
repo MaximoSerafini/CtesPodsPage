@@ -17,10 +17,6 @@ export const products = [
         image: "https://i.imgur.com/pXMFdmJ.png"
       },
       {
-        name: "Watermelon Ice",
-        image: "https://i.imgur.com/9drMZ0V.png"
-      },
-      {
         name: "Red Raspberry Strawberry",
         image: "https://i.imgur.com/oUVLxlx.png"
       },
