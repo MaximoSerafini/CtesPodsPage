@@ -13,10 +13,6 @@ export const products = [
         image: "https://i.imgur.com/xUJmQM2.png"
       },
       {
-        name: "Grape Cranberry",
-        image: "https://i.imgur.com/pXMFdmJ.png"
-      },
-      {
         name: "Red Raspberry Strawberry",
         image: "https://i.imgur.com/oUVLxlx.png"
       },
