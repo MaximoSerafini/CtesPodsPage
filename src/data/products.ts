@@ -4,8 +4,8 @@ export const products = [
     name: "NIC KING 40K",
     description: "40.000 Pitadas Con NICOTINA regulable",
     price: 20000,
-    available: true,
-    stock: 0,
+    available: false,
+    stock: 1,
     flavors: [
    
       {
@@ -67,8 +67,8 @@ export const products = [
     name: "Elfbar RB 10k",
     description: "10.000 Pitadas 5% Nicotina",
     price: 11000,
-    available: true,
-    stock: 0,
+    available: false,
+    stock: 1,
     flavors: [
       {
         name: "Watermelon Ice",
