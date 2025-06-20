@@ -5,7 +5,7 @@ export const products = [
     description: "40.000 Pitadas Con NICOTINA regulable",
     price: 20000,
     available: true,
-    stock: 1,
+    stock: 0,
     flavors: [
    
       {
@@ -49,10 +49,6 @@ export const products = [
     stock: 10,
     flavors: [
       {
-        name: "Prism Mint",
-        image: "https://i.imgur.com/VOWtbyH.png"
-      },
-      {
         name: "Sour Apple ice",
         image: "https://i.imgur.com/hJs2NfA.png"
       },
@@ -72,7 +68,7 @@ export const products = [
     description: "10.000 Pitadas 5% Nicotina",
     price: 11000,
     available: true,
-    stock: 10,
+    stock: 0,
     flavors: [
       {
         name: "Watermelon Ice",
@@ -86,7 +82,7 @@ export const products = [
     description: "25.000 Pitadas 5% Nicotina",
     price: 20000,
     available: true,
-    stock: 5,
+    stock: 4,
     flavors: [
       {
         name: "Green Apple",
