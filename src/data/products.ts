@@ -56,10 +56,6 @@ export const products = [
         name: "Gummy Peach",
         image: "https://i.imgur.com/OZgU1dQ.png"
       },
-      {
-        name: "Sour Watermelon Patch",
-        image: "https://i.imgur.com/YuYLltE.png"
-      },
     ]
   },
   {
