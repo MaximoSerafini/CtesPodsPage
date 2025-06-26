@@ -46,15 +46,11 @@ export const products = [
     description: "25.000 Pitadas 5% Nicotina",
     price: 14000,
     available: true,
-    stock: 10,
+    stock: 1,
     flavors: [
       {
         name: "Sour Apple ice",
         image: "https://i.imgur.com/hJs2NfA.png"
-      },
-      {
-        name: "Gummy Peach",
-        image: "https://i.imgur.com/OZgU1dQ.png"
       },
     ]
   },
