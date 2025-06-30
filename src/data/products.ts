@@ -73,7 +73,7 @@ export const products = [
     name: "Ignite v250 Gold",
     description: "25.000 Pitadas 5% Nicotina",
     price: 20000,
-    available: true,
+    available: false,
     stock: 4,
     flavors: [
       {
