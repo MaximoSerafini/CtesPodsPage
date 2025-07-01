@@ -86,9 +86,9 @@ export default function ProductCard({ product }: ProductCardProps) {
               </div>
             </div>
 
-            <div className={`mt-3 grid grid-cols-2 gap-2 transition-all duration-300 ease-in-out overflow-hidden ${
-              isFlavorMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-            }`}>
+            <div className={`mt-3 grid grid-cols-2 gap-4 transition-all duration-300 ease-in-out overflow-y-auto overflow-x-hidden ${
+              isFlavorMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+            }`} style={{ minHeight: isFlavorMenuOpen ? '120px' : '0' }}>
               {product.flavors.map((flavor, index) => (
                 <button
                   key={flavor.name}

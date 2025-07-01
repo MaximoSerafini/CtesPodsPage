@@ -20,6 +20,47 @@ export const products = [
   },
   {
     id: 1,
+    name: "Elfbar 30k",
+    description: "30.000 Pitadas",
+    price: 18500,
+    available: true,
+    stock: 10,
+    flavors: [
+   
+      {
+        name: "Bubbaloo tutti frutti",
+        image: "https://i.imgur.com/b4Uwsyj.png"
+      },
+      {
+        name: "Green apple ice",
+        image: "https://i.imgur.com/b4Uwsyj.png"
+      },
+      {
+        name: "Watermelon ice",
+        image: "https://i.imgur.com/b4Uwsyj.png"
+      },
+      {
+        name: "Strawberry watermelon ice",
+        image: "https://i.imgur.com/b4Uwsyj.png"
+      },
+      {
+        name: "Strawberry peach",
+        image: "https://i.imgur.com/b4Uwsyj.png"
+      },
+      {
+        name: "Bubbaloo grape",
+        image: "https://i.imgur.com/b4Uwsyj.png"
+      },
+      {
+        name: "Strawberry Ice",
+        image: "https://i.imgur.com/b4Uwsyj.png"
+      },
+    ]
+  },
+
+
+  {
+    id: 1,
     name: "WAKA BLAST 36000",
     description: "36.000 Pitadas 5% Nicotina",
     price: 20000,
@@ -40,17 +81,58 @@ export const products = [
       },
     ]
   },
+
+  {
+    id: 2,
+    name: "RabBeats touch 10k",
+    description: "10.000 Pitadas 5% Nicotina",
+    price: 11000,
+    available: true,
+    stock: 1,
+    flavors: [
+      {
+        name: "Blue razz",
+        image: "https://i.imgur.com/PWihDKi.png"
+      },
+      {
+        name: "Blueberry Watermelon",
+        image: "https://i.imgur.com/PWihDKi.png"
+      },
+    ]
+  },
+  {
+    id: 2,
+    name: "Elfbar 6k",
+    description: "6.000 Pitadas 5% Nicotina",
+    price: 8000,
+    available: true,
+    stock: 1,
+    flavors: [
+      {
+        name: "Strawberry ice",
+        image: "https://i.imgur.com/fV26Cb5.png"
+      },
+      {
+        name: "Blue razz",
+        image: "https://i.imgur.com/fV26Cb5.png"
+      },
+      {
+        name: "Grape ice",
+        image: "https://i.imgur.com/fV26Cb5.png"
+      },
+    ]
+  },
   {
     id: 2,
     name: "SPACEMAN NEBULA 25K",
     description: "25.000 Pitadas 5% Nicotina",
     price: 14000,
-    available: false,
+    available: true,
     stock: 1,
     flavors: [
       {
-        name: "Sour Apple ice",
-        image: "https://i.imgur.com/hJs2NfA.png"
+        name: "Blue razz Tang",
+        image: "https://i.imgur.com/u422U6E.png"
       },
     ]
   },
