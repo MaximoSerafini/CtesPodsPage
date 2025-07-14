@@ -57,6 +57,10 @@ function App() {
     );
   }
 
+  // Separar productos disponibles y sin stock
+  const availableProducts = products.filter(product => product.available);
+  const unavailableProducts = products.filter(product => !product.available);
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Navigation */}
@@ -169,10 +173,22 @@ function App() {
             Nuestras Colecciones
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 auto-rows-fr">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {availableProducts.map((product) => (
+              <ProductCard key={product.id + product.name} product={product} />
             ))}
           </div>
+
+          {/* Sección Sin stock */}
+          {unavailableProducts.length > 0 && (
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-center mb-8 text-gray-400">Sin stock</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 auto-rows-fr opacity-60">
+                {unavailableProducts.map((product) => (
+                  <ProductCard key={product.id + product.name} product={product} />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
