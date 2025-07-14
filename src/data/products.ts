@@ -142,23 +142,23 @@ export const products = [
       },
       {
         name: "Strawberry Ice",
-        image: "https://i.imgur.com/sXJ1BgB.png"
+        image: "https://i.imgur.com/b300VZQ.png"
       },
       {
         name: "Sakura Grape",
-        image: "https://i.imgur.com/sXJ1BgB.png"
+        image: "https://i.imgur.com/tSbRmHo.png"
       },
       {
         name: "Banana ice",
-        image: "https://i.imgur.com/sXJ1BgB.png"
+        image: "https://i.imgur.com/EY1qr50.png"
       },
       {
         name: "Miami mint",
-        image: "https://i.imgur.com/sXJ1BgB.png"
+        image: "https://i.imgur.com/UaOk9C2.png"
       },
       {
         name: "Triple Berry ice",
-        image: "https://i.imgur.com/sXJ1BgB.png"
+        image: "https://i.imgur.com/kllssD4.png"
       },
     ]
   },
