@@ -5,7 +5,7 @@ export const products = [
     description: "40.000 Pitadas Con NICOTINA regulable",
     price: 20000,
     available: false,
-    stock: 1,
+    stock: 1, // commit
     flavors: [
    
       {
