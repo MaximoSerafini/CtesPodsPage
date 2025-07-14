@@ -130,6 +130,40 @@ export const products = [
   },
   {
     id: 3,
+    name: "Elfbar 15k",
+    description: "15.000 Pitadas 5% Nicotina",
+    price: 14000,
+    available: true,
+    stock: 5,
+    flavors: [
+      {
+        name: "Watermelon Ice",
+        image: "https://i.imgur.com/b300VZQ.png"
+      },
+      {
+        name: "Strawberry Ice",
+        image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+      {
+        name: "Sakura Grape",
+        image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+      {
+        name: "Banana ice",
+        image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+      {
+        name: "Miami mint",
+        image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+      {
+        name: "Triple Berry ice",
+        image: "https://i.imgur.com/sXJ1BgB.png"
+      },
+    ]
+  },
+  {
+    id: 3,
     name: "Elfbar RB 10k",
     description: "10.000 Pitadas 5% Nicotina",
     price: 11000,
