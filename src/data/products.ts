@@ -48,10 +48,6 @@ export const products = [
         image: "https://i.imgur.com/b4Uwsyj.png"
       },
       {
-        name: "Bubbaloo grape",
-        image: "https://i.imgur.com/b4Uwsyj.png"
-      },
-      {
         name: "Strawberry Ice",
         image: "https://i.imgur.com/b4Uwsyj.png"
       },
