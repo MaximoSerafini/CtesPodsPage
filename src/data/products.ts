@@ -104,10 +104,6 @@ export const products = [
         name: "Blue razz",
         image: "https://i.imgur.com/fV26Cb5.png"
       },
-      {
-        name: "Grape ice",
-        image: "https://i.imgur.com/fV26Cb5.png"
-      },
     ]
   },
   {
