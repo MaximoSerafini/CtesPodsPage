@@ -115,7 +115,7 @@ export const products = [
     name: "SPACEMAN NEBULA 25K",
     description: "25.000 Pitadas 5% Nicotina",
     price: 14000,
-    available: true,
+    available: false,
     stock: 1,
     flavors: [
       {
