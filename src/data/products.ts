@@ -26,11 +26,6 @@ export const products = [
     available: true,
     stock: 10,
     flavors: [
-   
-      {
-        name: "Bubbaloo tutti frutti",
-        image: "https://i.imgur.com/b4Uwsyj.png"
-      },
       {
         name: "Green apple ice",
         image: "https://i.imgur.com/b4Uwsyj.png"
@@ -41,10 +36,6 @@ export const products = [
       },
       {
         name: "Strawberry watermelon ice",
-        image: "https://i.imgur.com/b4Uwsyj.png"
-      },
-      {
-        name: "Strawberry peach",
         image: "https://i.imgur.com/b4Uwsyj.png"
       },
       {
