@@ -27,15 +27,7 @@ export const products = [
     stock: 10,
     flavors: [
       {
-        name: "Green apple ice",
-        image: "https://i.imgur.com/b4Uwsyj.png"
-      },
-      {
         name: "Watermelon ice",
-        image: "https://i.imgur.com/b4Uwsyj.png"
-      },
-      {
-        name: "Strawberry watermelon ice",
         image: "https://i.imgur.com/b4Uwsyj.png"
       },
       {
@@ -73,10 +65,6 @@ export const products = [
         name: "Blue razz",
         image: "https://i.imgur.com/PWihDKi.png"
       },
-      {
-        name: "Blueberry Watermelon",
-        image: "https://i.imgur.com/PWihDKi.png"
-      },
     ]
   },
   {
@@ -84,7 +72,7 @@ export const products = [
     name: "Elfbar 6k",
     description: "6.000 Pitadas 5% Nicotina",
     price: 8000,
-    available: true,
+    available: false,
     stock: 1,
     flavors: [
       {
