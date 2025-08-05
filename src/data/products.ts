@@ -50,6 +50,18 @@ export const products = [
         name: "Passion Fruit Guava",
         image: "https://i.imgur.com/co999yQ.png"
       },
+       {
+        name: "Strawberry Banana",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+       {
+        name: "Strawberry Watermelon",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+       {
+        name: "Grape Ice",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
     ]
   },
 
@@ -65,6 +77,14 @@ export const products = [
         name: "Blue razz",
         image: "https://i.imgur.com/PWihDKi.png"
       },
+       {
+        name: "Dragon Strawnana",
+        image: "https://i.imgur.com/PWihDKi.png"
+      },
+       {
+        name: "Blueberry Watermelon",
+        image: "https://i.imgur.com/PWihDKi.png"
+      },
     ]
   },
   {
@@ -72,11 +92,19 @@ export const products = [
     name: "Elfbar 6k",
     description: "6.000 Pitadas 5% Nicotina",
     price: 8000,
-    available: false,
+    available: true,
     stock: 1,
     flavors: [
       {
-        name: "Blue razz",
+        name: "Grape ice",
+        image: "https://i.imgur.com/fV26Cb5.png"
+      },
+         {
+        name: "Strawberry Ice",
+        image: "https://i.imgur.com/fV26Cb5.png"
+      },
+         {
+        name: "Watermelon ice",
         image: "https://i.imgur.com/fV26Cb5.png"
       },
     ]
