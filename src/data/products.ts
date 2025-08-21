@@ -18,12 +18,42 @@ export const products = [
       },
     ]
   },
+   {
+    id: 1,
+    name: "Lost Mary 20k",
+    description: "20.000 Pitadas",
+    price: 17000,
+    available: true,
+    stock: 10,
+    flavors: [
+      {
+        name: "Watermelon ice",
+        image: "https://i.imgur.com/yNbQimc.png"
+      },
+      {
+        name: "Strawberry ice",
+        image: "https://i.imgur.com/ekMwAFA.png"
+      },
+       {
+        name: "Grape ice",
+        image: "https://i.imgur.com/ZX8EP3V.png"
+      },
+        {
+        name: "Banana ice",
+        image: "https://i.imgur.com/hRayShz.png"
+      },
+        {
+        name: "Mango Twist",
+        image: "https://i.imgur.com/kmFUs1r.png"
+      },
+    ]
+  },
   {
     id: 1,
     name: "Elfbar 30k",
     description: "30.000 Pitadas",
     price: 18500,
-    available: true,
+    available: false,
     stock: 10,
     flavors: [
       {
@@ -42,22 +72,11 @@ export const products = [
     available: true,
     stock: 10,
     flavors: [
-      {
-        name: "Passion Fruit Guava",
-        image: "https://i.imgur.com/co999yQ.png"
-      },
        {
         name: "Strawberry Banana",
         image: "https://i.imgur.com/co999yQ.png"
       },
-       {
-        name: "Strawberry Watermelon",
-        image: "https://i.imgur.com/co999yQ.png"
-      },
-       {
-        name: "Grape Ice",
-        image: "https://i.imgur.com/co999yQ.png"
-      },
+   
     ]
   },
 
@@ -97,12 +116,7 @@ export const products = [
       },
          {
         name: "Strawberry Ice",
-        image: "https://i.imgur.com/fV26Cb5.png"
-      },
-         {
-        name: "Watermelon ice",
-        image: "https://i.imgur.com/fV26Cb5.png"
-      },
+        image: "https://i.imgur.com/fV26Cb5.png
     ]
   },
   {
@@ -127,14 +141,7 @@ export const products = [
     available: true,
     stock: 5,
     flavors: [
-      {
-        name: "Watermelon Ice",
-        image: "https://i.imgur.com/b300VZQ.png"
-      },
-      {
-        name: "Strawberry Ice",
-        image: "https://i.imgur.com/b300VZQ.png"
-      },
+  
       {
         name: "Sakura Grape",
         image: "https://i.imgur.com/tSbRmHo.png"
@@ -146,10 +153,6 @@ export const products = [
       {
         name: "Miami mint",
         image: "https://i.imgur.com/UaOk9C2.png"
-      },
-      {
-        name: "Triple Berry ice",
-        image: "https://i.imgur.com/kllssD4.png"
       },
     ]
   },
