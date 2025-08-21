@@ -34,11 +34,11 @@ export const products = [
         name: "Strawberry ice",
         image: "https://i.imgur.com/ekMwAFA.png"
       },
-       {
+      {
         name: "Grape ice",
         image: "https://i.imgur.com/ZX8EP3V.png"
       },
-        {
+      {
         name: "Banana ice",
         image: "https://i.imgur.com/hRayShz.png"
       },
@@ -116,7 +116,8 @@ export const products = [
       },
          {
         name: "Strawberry Ice",
-        image: "https://i.imgur.com/fV26Cb5.png
+        image: "https://i.imgur.com/fV26Cb5.png"
+        },
     ]
   },
   {
