@@ -27,14 +27,6 @@ export const products = [
     stock: 10,
     flavors: [
       {
-        name: "Watermelon ice",
-        image: "https://i.imgur.com/yNbQimc.png"
-      },
-      {
-        name: "Strawberry ice",
-        image: "https://i.imgur.com/ekMwAFA.png"
-      },
-      {
         name: "Grape ice",
         image: "https://i.imgur.com/ZX8EP3V.png"
       },
