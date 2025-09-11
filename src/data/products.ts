@@ -127,7 +127,7 @@ export const products = [
     name: "Elfbar 15k",
     description: "15.000 Pitadas 5% Nicotina",
     price: 14000,
-    available: true,
+    available: false,
     stock: 5,
     flavors: [
   
