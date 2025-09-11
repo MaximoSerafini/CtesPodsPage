@@ -23,7 +23,7 @@ export const products = [
     name: "Lost Mary 20k",
     description: "20.000 Pitadas",
     price: 17000,
-    available: true,
+    available: false,
     stock: 10,
     flavors: [
       {
@@ -61,7 +61,7 @@ export const products = [
     name: "WAKA BLAST 36000",
     description: "36.000 Pitadas 5% Nicotina",
     price: 20000,
-    available: true,
+    available: false,
     stock: 10,
     flavors: [
        {
@@ -80,10 +80,6 @@ export const products = [
     available: true,
     stock: 1,
     flavors: [
-      {
-        name: "Blue razz",
-        image: "https://i.imgur.com/PWihDKi.png"
-      },
        {
         name: "Dragon Strawnana",
         image: "https://i.imgur.com/PWihDKi.png"
@@ -102,12 +98,12 @@ export const products = [
     available: true,
     stock: 1,
     flavors: [
-      {
-        name: "Grape ice",
-        image: "https://i.imgur.com/fV26Cb5.png"
-      },
          {
         name: "Strawberry Ice",
+        image: "https://i.imgur.com/fV26Cb5.png"
+        },
+      {
+        name: "Watermelon Ice",
         image: "https://i.imgur.com/fV26Cb5.png"
         },
     ]
