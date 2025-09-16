@@ -61,11 +61,15 @@ export const products = [
     name: "WAKA BLAST 36000",
     description: "36.000 Pitadas 5% Nicotina",
     price: 20000,
-    available: false,
+    available: true,
     stock: 10,
     flavors: [
        {
         name: "Strawberry Banana",
+        image: "https://i.imgur.com/co999yQ.png"
+      },
+         {
+        name: "Strawberry Watermelon",
         image: "https://i.imgur.com/co999yQ.png"
       },
    
@@ -99,13 +103,10 @@ export const products = [
     stock: 1,
     flavors: [
          {
-        name: "Strawberry Ice",
+        name: "Grape ice",
         image: "https://i.imgur.com/fV26Cb5.png"
         },
-      {
-        name: "Watermelon Ice",
-        image: "https://i.imgur.com/fV26Cb5.png"
-        },
+    
     ]
   },
   {
@@ -127,22 +128,15 @@ export const products = [
     name: "Elfbar 15k",
     description: "15.000 Pitadas 5% Nicotina",
     price: 14000,
-    available: false,
+    available: true,
     stock: 5,
     flavors: [
   
       {
-        name: "Sakura Grape",
+        name: "Strawberry Ice",
         image: "https://i.imgur.com/tSbRmHo.png"
       },
-      {
-        name: "Banana ice",
-        image: "https://i.imgur.com/EY1qr50.png"
-      },
-      {
-        name: "Miami mint",
-        image: "https://i.imgur.com/UaOk9C2.png"
-      },
+     
     ]
   },
   {
