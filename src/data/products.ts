@@ -61,7 +61,7 @@ export const products = [
     name: "WAKA BLAST 36000",
     description: "36.000 Pitadas 5% Nicotina",
     price: 20000,
-    available: true,
+    available: false,
     stock: 10,
     flavors: [
        {
@@ -81,7 +81,7 @@ export const products = [
     name: "RabBeats touch 10k",
     description: "10.000 Pitadas 5% Nicotina",
     price: 11000,
-    available: true,
+    available: false,
     stock: 1,
     flavors: [
        {
@@ -99,7 +99,7 @@ export const products = [
     name: "Elfbar 6k",
     description: "6.000 Pitadas 5% Nicotina",
     price: 8000,
-    available: true,
+    available: false,
     stock: 1,
     flavors: [
          {
@@ -128,7 +128,7 @@ export const products = [
     name: "Elfbar 15k",
     description: "15.000 Pitadas 5% Nicotina",
     price: 14000,
-    available: true,
+    available: false,
     stock: 5,
     flavors: [
   
